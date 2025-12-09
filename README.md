@@ -13,11 +13,11 @@ Este repositório contém projetos desenvolvidos para estudos e demonstração d
 - Limpeza e modelagem dos dados
 - Consultas com agregações
 - Joins e criação de tabelas
-- Insight principal: aumento de vendas no segmento jovem
+
 
 ### 2. Python – Análise exploratória
 - Importação de CSV
 - Tratamento de dados
 - Insight: identificação de padrões de comportamento
-
+- Insight principal: aumento de vendas no segmento jovem
 Em breve trarei mais conteúdo 
