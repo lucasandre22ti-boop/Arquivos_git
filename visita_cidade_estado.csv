@@ -1,0 +1,28 @@
+-- Visitas por cidade e estado
+
+SELECT 
+      first_name,state,city,
+    COUNT(f.visit_page_date) AS visitas
+FROM 
+    sales.customers c
+LEFT JOIN 
+    sales.funnel f ON f.customer_id = c.customer_id
+GROUP BY 	 
+    c.first_name,c.state,c.city
+ORDER BY visitas,c.first_name
+     asc
+limit 10
+
+--Resultado Da Query
+
+"first_name",,"state","city","visitas"
+"ABELl",    "SP", "SÃO PAULO","1"
+"LAURA", "SP",  "SÃO PAULO","1"
+"ABIGAIL", "RS", "IGREJINHA","1"
+"ABILIO",  "GO", "GOIÂNIA","1"
+"ABIMELEQUE","SP", "SÃO PAULO","1"
+"MARCELO",  "PR", "MARECHAL CÂNDIDO RONDON","1"
+"MARCOS",    "SP", "SUZANO","1"
+"ISMAEL",  "SP","MAUÁ","1"
+"LAURO", "SP", "SÃO PAULO","1"
+"ABNER",   "SP", "SÃO PAULO","1"
